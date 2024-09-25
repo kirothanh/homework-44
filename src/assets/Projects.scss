@@ -1,0 +1,78 @@
+.projects-div {
+  padding: 112px 0px;
+
+  h2 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .desc-title {
+    padding: 0 16px;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #cacaca;
+    line-height: 1.625;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 80px;
+  }
+
+  .custom-gutter {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .custom-gutter > .col {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .custom-gutter > .col > .project-wrap {
+    margin-bottom: 10px;
+  }
+  
+  .project-wrap {
+    .img {
+      margin-bottom: 24px;
+
+      img {
+        border-radius: 8px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      a {
+        display: inline-block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: inherit;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 1.25rem;
+      }
+
+      p {
+        margin-bottom: 24px;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+
+      button {
+        color: white;
+        background-color: black;
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}

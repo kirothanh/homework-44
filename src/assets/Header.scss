@@ -1,0 +1,161 @@
+.header {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title-logo {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .header-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    li {
+      display: flex;
+      justify-content: center;
+      svg {
+        width: 20px;
+      }
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .header-buttons {
+    .btn-signIn {
+      border: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 10px;
+      outline: none;
+      background: transparent;
+      transition: all linear 0.4s;
+      cursor: pointer;
+      margin-right: 5px;
+
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+
+    .btn-blocks {
+      border: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 10px;
+      outline: none;
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .icon-newHeader {
+    display: none;
+    width: 20px;
+    cursor: pointer;
+  }
+}
+
+.header-responsive {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    .icon-newHeader {
+      display: block;
+      width: 20px;
+
+      .close-icon {
+        display: none;
+      }
+    }
+
+    .header-options {
+      display: none;
+    }
+
+    .header-buttons {
+      display: none;
+    }
+  }
+
+  .header-responsive {
+    display: block;
+    transition: all ease-out 0.2s;
+    height: 0;
+    overflow: hidden;
+    padding: 0 16px;
+    border: none;
+
+    &.open {
+      border-top: 1px solid #000;
+      height: auto;
+      padding: 16px;
+    }
+
+    .header-options {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+
+      li {
+        display: flex;
+        justify-content: center;
+        svg {
+          width: 20px;
+        }
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .header-buttons {
+      margin-top: 20px;
+      .btn-signIn {
+        border: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 10px;
+        outline: none;
+        background: transparent;
+        transition: all linear 0.4s;
+        cursor: pointer;
+        margin-right: 5px;
+
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+
+      .btn-blocks {
+        border: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 10px;
+        outline: none;
+        background: black;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
